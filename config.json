@@ -1,0 +1,50 @@
+# ============================================
+# Pac-Man configuration file
+# Lines starting with # are comments and are ignored
+# ============================================
+
+{
+    // Highscore persistence
+    "highscore_filename": "highscores.json",
+
+    // Random seed for level 1 (reproducible maze), other levels use random seed
+    "seed": 42,
+
+    // Player settings
+    "lives": 3,
+    "player_speed": 1,
+
+    // Scoring
+    "points_per_pacgum": 10,
+    "points_per_super_pacgum": 50,
+    "points_per_ghost": 200,
+
+    // Pacgums
+    "pacgum_count": 42,
+
+    // Time limit per level (seconds)
+    "level_max_time": 90,  // Time limit per level (seconds)
+
+    // Duration ghosts stay edible after a super-pacgum (seconds)
+    "super_pacgum_duration": 8,
+
+    // Duration before an eaten ghost respawns (seconds)
+    "ghost_respawn_delay": 5,
+
+    // Levels: one entry per level, at least 10 required
+    "levels": [
+        { "width": 21, "height": 21 },
+        { "width": 21, "height": 21 },
+        { "width": 25, "height": 25 },
+        { "width": 25, "height": 25 },
+        { "width": 25, "height": 25 },
+        { "width": 29, "height": 29 },
+        { "width": 29, "height": 29 },
+        { "width": 29, "height": 29 },
+        { "width": 33, "height": 33 },
+        { "width": 33, "height": 33 }
+    ],
+
+    // Also supports C++ style comments if you want
+    "cheat_mode_enabled": true
+}
